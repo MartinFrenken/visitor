@@ -1,4 +1,4 @@
-// Generated from C:/Users/Martin/Documents/S3/Automata/calculatorTreeVisitor/src/main/java/com/company\MyGrammar.g4 by ANTLR 4.7.2
+// Generated from C:/Users/win 10/IdeaProjects/visitor/src/main/java/com/company\MyGrammar.g4 by ANTLR 4.7.2
 package com.company;
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
@@ -86,6 +86,18 @@ public interface MyGrammarListener extends ParseTreeListener {
 	 */
 	void exitSubtractionExpression(MyGrammarParser.SubtractionExpressionContext ctx);
 	/**
+	 * Enter a parse tree produced by the {@code onBoolean}
+	 * labeled alternative in {@link MyGrammarParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterOnBoolean(MyGrammarParser.OnBooleanContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code onBoolean}
+	 * labeled alternative in {@link MyGrammarParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitOnBoolean(MyGrammarParser.OnBooleanContext ctx);
+	/**
 	 * Enter a parse tree produced by the {@code multiplicationExpression}
 	 * labeled alternative in {@link MyGrammarParser#expression}.
 	 * @param ctx the parse tree
@@ -109,6 +121,62 @@ public interface MyGrammarListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitDivisionExpression(MyGrammarParser.DivisionExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code equalsBoolean}
+	 * labeled alternative in {@link MyGrammarParser#myBoolean}.
+	 * @param ctx the parse tree
+	 */
+	void enterEqualsBoolean(MyGrammarParser.EqualsBooleanContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code equalsBoolean}
+	 * labeled alternative in {@link MyGrammarParser#myBoolean}.
+	 * @param ctx the parse tree
+	 */
+	void exitEqualsBoolean(MyGrammarParser.EqualsBooleanContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code lesserThanBoolean}
+	 * labeled alternative in {@link MyGrammarParser#myBoolean}.
+	 * @param ctx the parse tree
+	 */
+	void enterLesserThanBoolean(MyGrammarParser.LesserThanBooleanContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code lesserThanBoolean}
+	 * labeled alternative in {@link MyGrammarParser#myBoolean}.
+	 * @param ctx the parse tree
+	 */
+	void exitLesserThanBoolean(MyGrammarParser.LesserThanBooleanContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code greaterThanBoolean}
+	 * labeled alternative in {@link MyGrammarParser#myBoolean}.
+	 * @param ctx the parse tree
+	 */
+	void enterGreaterThanBoolean(MyGrammarParser.GreaterThanBooleanContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code greaterThanBoolean}
+	 * labeled alternative in {@link MyGrammarParser#myBoolean}.
+	 * @param ctx the parse tree
+	 */
+	void exitGreaterThanBoolean(MyGrammarParser.GreaterThanBooleanContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link MyGrammarParser#ifStatement}.
+	 * @param ctx the parse tree
+	 */
+	void enterIfStatement(MyGrammarParser.IfStatementContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link MyGrammarParser#ifStatement}.
+	 * @param ctx the parse tree
+	 */
+	void exitIfStatement(MyGrammarParser.IfStatementContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link MyGrammarParser#whileStatement}.
+	 * @param ctx the parse tree
+	 */
+	void enterWhileStatement(MyGrammarParser.WhileStatementContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link MyGrammarParser#whileStatement}.
+	 * @param ctx the parse tree
+	 */
+	void exitWhileStatement(MyGrammarParser.WhileStatementContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link MyGrammarParser#assignment}.
 	 * @param ctx the parse tree
@@ -149,6 +217,16 @@ public interface MyGrammarListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitNewVariable(MyGrammarParser.NewVariableContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link MyGrammarParser#bool}.
+	 * @param ctx the parse tree
+	 */
+	void enterBool(MyGrammarParser.BoolContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link MyGrammarParser#bool}.
+	 * @param ctx the parse tree
+	 */
+	void exitBool(MyGrammarParser.BoolContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link MyGrammarParser#integer}.
 	 * @param ctx the parse tree

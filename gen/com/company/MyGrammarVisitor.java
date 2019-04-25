@@ -1,4 +1,4 @@
-// Generated from C:/Users/Martin/Documents/S3/Automata/calculatorTreeVisitor/src/main/java/com/company\MyGrammar.g4 by ANTLR 4.7.2
+// Generated from C:/Users/win 10/IdeaProjects/visitor/src/main/java/com/company\MyGrammar.g4 by ANTLR 4.7.2
 package com.company;
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
@@ -57,6 +57,13 @@ public interface MyGrammarVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitSubtractionExpression(MyGrammarParser.SubtractionExpressionContext ctx);
 	/**
+	 * Visit a parse tree produced by the {@code onBoolean}
+	 * labeled alternative in {@link MyGrammarParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitOnBoolean(MyGrammarParser.OnBooleanContext ctx);
+	/**
 	 * Visit a parse tree produced by the {@code multiplicationExpression}
 	 * labeled alternative in {@link MyGrammarParser#expression}.
 	 * @param ctx the parse tree
@@ -70,6 +77,39 @@ public interface MyGrammarVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitDivisionExpression(MyGrammarParser.DivisionExpressionContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code equalsBoolean}
+	 * labeled alternative in {@link MyGrammarParser#myBoolean}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitEqualsBoolean(MyGrammarParser.EqualsBooleanContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code lesserThanBoolean}
+	 * labeled alternative in {@link MyGrammarParser#myBoolean}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitLesserThanBoolean(MyGrammarParser.LesserThanBooleanContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code greaterThanBoolean}
+	 * labeled alternative in {@link MyGrammarParser#myBoolean}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitGreaterThanBoolean(MyGrammarParser.GreaterThanBooleanContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link MyGrammarParser#ifStatement}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitIfStatement(MyGrammarParser.IfStatementContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link MyGrammarParser#whileStatement}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitWhileStatement(MyGrammarParser.WhileStatementContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link MyGrammarParser#assignment}.
 	 * @param ctx the parse tree
@@ -94,6 +134,12 @@ public interface MyGrammarVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitNewVariable(MyGrammarParser.NewVariableContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link MyGrammarParser#bool}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitBool(MyGrammarParser.BoolContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link MyGrammarParser#integer}.
 	 * @param ctx the parse tree

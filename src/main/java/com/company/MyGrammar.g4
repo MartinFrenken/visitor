@@ -9,7 +9,7 @@ myStart: line* EOF;
 line        :input+ eol
          ;
 
-input : expression|declaration|assignment|print;
+input : expression|declaration|assignment|print|ifStatement;
 
 expression  :expression multiplication expression #multiplicationExpression
            | expression addition expression #additionExpression
@@ -19,9 +19,15 @@ expression  :expression multiplication expression #multiplicationExpression
            |variable                              #onVariable
            |bool                                  #onBoolean
             ;
+myBoolean: expression EQUALS expression #equalsBoolean
+        |  expression LESSERTHAN expression #lesserThanBoolean
+        | expression GREATERTHAN expression #greaterThanBoolean
+        ;
 
 
-assignment  : VARIABLE ASSIGNMENT expression;
+ifStatement :IF myBoolean DO input*;
+whileStatement :WHILE expression EQUALS expression DO input*;
+assignment  : VARIABLE ASSIGNMENT expression ;
 declaration  :newVariable;
 value       :integer|variable;
 newVariable : DECLARATION VARIABLE;
@@ -38,7 +44,14 @@ newline     : '\n';
 whitespace  :WS;
 eol        :EOL;
 
+
+
 // tokens
+GREATERTHAN :'is greater than';
+LESSERTHAN  :'is lesser than';
+WHILE       :'while';
+DO          :'do';
+IF          :'if';
 TRUE        :'true';
 FALSE       :'false';
 PRINT       :'print';

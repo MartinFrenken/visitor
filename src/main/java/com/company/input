@@ -1,1 +1,3 @@
-true .
+new Toucan .
+340 times 230 .
+if 3 is greater than 1 do print 3029 .
