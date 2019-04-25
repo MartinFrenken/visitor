@@ -9,7 +9,6 @@ import java.util.Stack;
 class MyVisitor extends MyGrammarBaseVisitor<Value>
 {
     public static final String ANSI_CYAN_BACKGROUND = "\u001B[35m";
-    boolean ifStatementWasTrue =false;
     Map<String,Value> variables = new HashMap<String, Value>();
     @Override public Value visitTerminal(TerminalNode node)
     {
@@ -111,6 +110,27 @@ class MyVisitor extends MyGrammarBaseVisitor<Value>
         Value printValue = visit(ctx.expression(0));
         String printOutput = printValue.asString();
         System.out.println("#"+printOutput);
+        return null;
+    }
+    @Override  public Value visitAssignment(MyGrammarParser.AssignmentContext ctx)
+    {
+        Value var1 = visit(ctx.expression());
+       variables.put(ctx.VARIABLE().getText(),var1);
+        return null;
+    }
+    @Override public Value visitVariable(MyGrammarParser.VariableContext ctx)
+    {
+      Value returnValue = variables.get(ctx.VARIABLE().getText());
+        return returnValue;
+    }
+    @Override public Value visitWhileStatement(MyGrammarParser.WhileStatementContext ctx)
+    {
+        Value value =visit(ctx.myBoolean());
+
+        while (value.asBoolean())
+        {
+            visit(ctx.input(0));
+        }
         return null;
     }
 }

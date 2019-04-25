@@ -4,18 +4,11 @@
     <list default="true" id="cbfdbb4b-9d6b-4ab5-8d41-3550e9b2b766" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gen/com/company/MyGrammar.interp" beforeDir="false" afterPath="$PROJECT_DIR$/gen/com/company/MyGrammar.interp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/com/company/MyGrammar.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/gen/com/company/MyGrammar.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/com/company/MyGrammarBaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/com/company/MyGrammarBaseListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/com/company/MyGrammarBaseVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/com/company/MyGrammarBaseVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/com/company/MyGrammarLexer.interp" beforeDir="false" afterPath="$PROJECT_DIR$/gen/com/company/MyGrammarLexer.interp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/com/company/MyGrammarLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/com/company/MyGrammarLexer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/com/company/MyGrammarLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/gen/com/company/MyGrammarLexer.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/com/company/MyGrammarListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/com/company/MyGrammarListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gen/com/company/MyGrammarParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/com/company/MyGrammarParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/com/company/MyGrammarVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/com/company/MyGrammarVisitor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/company/MyGrammar.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/MyGrammar.g4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/company/MyVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/MyVisitor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/company/input" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/input" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/MyVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/MyVisitor.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -48,14 +41,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/company/MyVisitor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+            <state relative-caret-position="668">
+              <caret line="127" column="21" selection-start-line="127" selection-start-column="21" selection-end-line="127" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#349#364#0" expanded="true" />
+                <element signature="e#310#325#0" expanded="true" />
                 <element signature="e#587#588#0" expanded="true" />
                 <element signature="e#628#629#0" expanded="true" />
               </folding>
@@ -94,11 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/company/input">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+              <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -106,8 +99,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/company/MyGrammar.g4">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+            <state relative-caret-position="425">
+              <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -147,6 +140,7 @@
       <find>addition</find>
       <find>integerDecl</find>
       <find>expression</find>
+      <find>ifSt</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -163,9 +157,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/company/Value.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/Main.java" />
         <option value="$PROJECT_DIR$/gen/com/company/MyGrammarBaseVisitor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/company/input" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/MyGrammar.g4" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/MyVisitor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/company/input" />
       </list>
     </option>
   </component>
@@ -236,7 +230,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556180506984" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556181337703" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/antlrExampleVisitor" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -310,19 +304,19 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.26628897" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.89348173" weight="0.23226812" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.89228934" visible="true" weight="0.23226812" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.48330683" weight="0.395947" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Tool Output" order="8" sideWeight="0.49880764" visible="true" weight="0.32969603" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4986577" weight="0.4036827" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5011924" side_tool="true" visible="true" weight="0.32969603" />
+      <window_info anchor="bottom" id="Tool Output" order="8" sideWeight="0.49880764" weight="0.32969603" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49841017" weight="0.40296182" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.10771065" side_tool="true" visible="true" weight="0.23226812" />
       <window_info anchor="bottom" id="ANTLR Preview" order="11" sideWeight="0.4916534" weight="0.3257989" />
       <window_info anchor="bottom" id="Log Viewer" order="12" />
       <window_info anchor="bottom" id="Anonymous Apex" order="13" />
-      <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.46581876" weight="0.40296182" />
+      <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.4646264" weight="0.40296182" />
       <window_info anchor="bottom" id="SOQL Query" order="15" />
       <window_info anchor="bottom" id="Docker" order="16" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="17" />
@@ -475,13 +469,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/input">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/Value.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -499,23 +486,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/MyGrammar.g4">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/MyVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+        <state relative-caret-position="668">
+          <caret line="127" column="21" selection-start-line="127" selection-start-column="21" selection-end-line="127" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#349#364#0" expanded="true" />
+            <element signature="e#310#325#0" expanded="true" />
             <element signature="e#587#588#0" expanded="true" />
             <element signature="e#628#629#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/MyGrammar.g4">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/input">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
         </state>
       </provider>
     </entry>

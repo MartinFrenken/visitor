@@ -9,7 +9,7 @@ myStart: line* EOF;
 line        :input+ eol
          ;
 
-input : expression|declaration|assignment|print|ifStatement;
+input : expression|declaration|assignment|print|ifStatement|whileStatement;
 
 expression  :expression multiplication expression #multiplicationExpression
            | expression addition expression #additionExpression
@@ -26,7 +26,7 @@ myBoolean: expression EQUALS expression #equalsBoolean
 
 
 ifStatement :IF myBoolean DO input*;
-whileStatement :WHILE expression EQUALS expression DO input*;
+whileStatement :WHILE myBoolean DO input*;
 assignment  : VARIABLE ASSIGNMENT expression ;
 declaration  :newVariable;
 value       :integer|variable;
