@@ -7,11 +7,11 @@ import java.util.Map;
 
 class MyVisitor extends MyGrammarBaseVisitor<Value>
 {
-
-    Map<String,Integer> int
+    public static final String ANSI_CYAN_BACKGROUND = "\u001B[35m";
+    Map<String,Value> variables = new HashMap<String, Value>();
     @Override public Value visitTerminal(TerminalNode node)
     {
-        System.err.println("[" + node.getText() + "]");
+        System.err.println(ANSI_CYAN_BACKGROUND+"[" + node.getText() + "]");
         return (new Value (node.getText()));
     }
     @Override public Value visitNewVariable(MyGrammarParser.NewVariableContext ctx)

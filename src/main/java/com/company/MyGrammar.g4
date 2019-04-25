@@ -7,7 +7,7 @@ myStart: line* EOF;
 
 ///
 line        :input+ eol
-             ;
+         ;
 
 input : expression|declaration|assignment|print;
 
@@ -24,8 +24,6 @@ expression  :expression multiplication expression #multiplicationExpression
 assignment  : VARIABLE ASSIGNMENT expression;
 declaration  :newVariable;
 value       :integer|variable;
-
-
 newVariable : DECLARATION VARIABLE;
 bool        : TRUE|FALSE;
 integer     : NUMBER;
