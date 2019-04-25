@@ -1,5 +1,6 @@
 package com.company;
 
+
 import org.antlr.v4.runtime.tree.TerminalNode;
 
 import java.util.HashMap;
@@ -49,6 +50,7 @@ class MyVisitor extends MyGrammarBaseVisitor<Value>
         return new Value(false);
 
     }
+    @SuppressWarnings("Duplicates")
     @Override public Value visitLesserThanBoolean(MyGrammarParser.LesserThanBooleanContext ctx)
     {
         Value var1 =visit(ctx.expression(0));
@@ -58,6 +60,7 @@ class MyVisitor extends MyGrammarBaseVisitor<Value>
         return new Value(false);
 
     }
+    @SuppressWarnings("Duplicates")
     @Override public Value visitGreaterThanBoolean(MyGrammarParser.GreaterThanBooleanContext ctx)
     {
         Value var1 =visit(ctx.expression(0));
@@ -129,8 +132,10 @@ class MyVisitor extends MyGrammarBaseVisitor<Value>
 
         while (value.asBoolean())
         {
-            visit(ctx.input(0));
-            value =visit(ctx.myBoolean());
+            for(int i = 0;i<ctx.line().size();i++) {
+                visit(ctx.line(i));
+                value = visit(ctx.myBoolean());
+            }
         }
         return null;
     }

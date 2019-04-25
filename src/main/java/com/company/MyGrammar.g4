@@ -26,7 +26,7 @@ myBoolean: expression EQUALS expression #equalsBoolean
 
 
 ifStatement :IF myBoolean DO input*;
-whileStatement :WHILE myBoolean DO line*;
+whileStatement :WHILE myBoolean DO line* END;
 assignment  : VARIABLE ASSIGNMENT expression ;
 declaration  :newVariable;
 value       :integer|variable;
@@ -40,7 +40,6 @@ division    : DIVISION;
 addition    : ADDITION;
 subtraction :SUBTRACTION;
 equals      : EQUALS;
-newline     : '\n';
 whitespace  :WS;
 eol        :EOL;
 
@@ -52,6 +51,7 @@ LESSERTHAN  :'is lesser than';
 WHILE       :'while';
 DO          :'do';
 IF          :'if';
+END         :'end';
 TRUE        :'true';
 FALSE       :'false';
 PRINT       :'print';
@@ -66,7 +66,6 @@ ASSIGNMENT:'is';
 DECLARATION:'new';
 SUBTRACTION:'minus';
 EQUALS: 'equals';
-NEWLINE:[\r\n]+;
 VARIABLE:[a-zA-Z]+;
 ID 			: [_A-Za-z][A-Za-z_!0-9.]* ;
 WS 			: [ \n\t\r]+ -> skip ; // skip spaces, tabs, newlines

@@ -1,4 +1,4 @@
-// Generated from C:/Users/win 10/IdeaProjects/visitor/src/main/java/com/company\MyGrammar.g4 by ANTLR 4.7.2
+// Generated from C:/Users/Martin/Documents/S3/Automata/calculatorTreeVisitor/src/main/java/com/company\MyGrammar.g4 by ANTLR 4.7.2
 package com.company;
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
@@ -188,12 +188,6 @@ public interface MyGrammarVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitEquals(MyGrammarParser.EqualsContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link MyGrammarParser#newline}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitNewline(MyGrammarParser.NewlineContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link MyGrammarParser#whitespace}.
 	 * @param ctx the parse tree

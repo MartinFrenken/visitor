@@ -1,4 +1,4 @@
-// Generated from C:/Users/win 10/IdeaProjects/visitor/src/main/java/com/company\MyGrammar.g4 by ANTLR 4.7.2
+// Generated from C:/Users/Martin/Documents/S3/Automata/calculatorTreeVisitor/src/main/java/com/company\MyGrammar.g4 by ANTLR 4.7.2
 package com.company;
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
@@ -307,16 +307,6 @@ public interface MyGrammarListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitEquals(MyGrammarParser.EqualsContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link MyGrammarParser#newline}.
-	 * @param ctx the parse tree
-	 */
-	void enterNewline(MyGrammarParser.NewlineContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link MyGrammarParser#newline}.
-	 * @param ctx the parse tree
-	 */
-	void exitNewline(MyGrammarParser.NewlineContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link MyGrammarParser#whitespace}.
 	 * @param ctx the parse tree
