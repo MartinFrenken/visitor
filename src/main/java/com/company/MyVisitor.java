@@ -130,6 +130,7 @@ class MyVisitor extends MyGrammarBaseVisitor<Value>
         while (value.asBoolean())
         {
             visit(ctx.input(0));
+            value =visit(ctx.myBoolean());
         }
         return null;
     }

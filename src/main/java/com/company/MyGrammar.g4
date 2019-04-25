@@ -26,7 +26,7 @@ myBoolean: expression EQUALS expression #equalsBoolean
 
 
 ifStatement :IF myBoolean DO input*;
-whileStatement :WHILE myBoolean DO input*;
+whileStatement :WHILE myBoolean DO line*;
 assignment  : VARIABLE ASSIGNMENT expression ;
 declaration  :newVariable;
 value       :integer|variable;
