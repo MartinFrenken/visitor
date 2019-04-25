@@ -17,7 +17,9 @@ class Value {
     public Integer asInteger() {
         return (Integer)value;
     }
-
+    public Double asDouble() {
+        return (Double)value;
+    }
     public String asString() {
         return String.valueOf(value);
     }

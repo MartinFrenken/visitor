@@ -15,6 +15,7 @@ expression  :expression multiplication expression #multiplicationExpression
            | expression addition expression #additionExpression
            | expression subtraction expression  #subtractionExpression
            |expression division expression        #divisionExpression
+           |expression power expression           #powerExpression
            |integer                               #onInteger
            |variable                              #onVariable
            |bool                                  #onBoolean
@@ -36,6 +37,7 @@ integer     : NUMBER;
 print       :PRINT expression*;
 variable    : VARIABLE;
 multiplication:MULTIPLICATION;
+power       : POWER;
 division    : DIVISION;
 addition    : ADDITION;
 subtraction :SUBTRACTION;
@@ -46,6 +48,7 @@ eol        :EOL;
 
 
 // tokens
+POWER       :'to the power of';
 GREATERTHAN :'is greater than';
 LESSERTHAN  :'is lesser than';
 WHILE       :'while';

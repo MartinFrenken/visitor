@@ -38,6 +38,18 @@ public interface MyGrammarListener extends ParseTreeListener {
 	 */
 	void exitInput(MyGrammarParser.InputContext ctx);
 	/**
+	 * Enter a parse tree produced by the {@code powerExpression}
+	 * labeled alternative in {@link MyGrammarParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterPowerExpression(MyGrammarParser.PowerExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code powerExpression}
+	 * labeled alternative in {@link MyGrammarParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitPowerExpression(MyGrammarParser.PowerExpressionContext ctx);
+	/**
 	 * Enter a parse tree produced by the {@code onInteger}
 	 * labeled alternative in {@link MyGrammarParser#expression}.
 	 * @param ctx the parse tree
@@ -267,6 +279,16 @@ public interface MyGrammarListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitMultiplication(MyGrammarParser.MultiplicationContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link MyGrammarParser#power}.
+	 * @param ctx the parse tree
+	 */
+	void enterPower(MyGrammarParser.PowerContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link MyGrammarParser#power}.
+	 * @param ctx the parse tree
+	 */
+	void exitPower(MyGrammarParser.PowerContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link MyGrammarParser#division}.
 	 * @param ctx the parse tree

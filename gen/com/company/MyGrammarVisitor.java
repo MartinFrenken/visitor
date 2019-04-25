@@ -29,6 +29,13 @@ public interface MyGrammarVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitInput(MyGrammarParser.InputContext ctx);
 	/**
+	 * Visit a parse tree produced by the {@code powerExpression}
+	 * labeled alternative in {@link MyGrammarParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitPowerExpression(MyGrammarParser.PowerExpressionContext ctx);
+	/**
 	 * Visit a parse tree produced by the {@code onInteger}
 	 * labeled alternative in {@link MyGrammarParser#expression}.
 	 * @param ctx the parse tree
@@ -164,6 +171,12 @@ public interface MyGrammarVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitMultiplication(MyGrammarParser.MultiplicationContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link MyGrammarParser#power}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitPower(MyGrammarParser.PowerContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link MyGrammarParser#division}.
 	 * @param ctx the parse tree

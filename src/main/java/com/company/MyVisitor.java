@@ -13,7 +13,7 @@ class MyVisitor extends MyGrammarBaseVisitor<Value>
     Map<String,Value> variables = new HashMap<String, Value>();
     @Override public Value visitTerminal(TerminalNode node)
     {
-        System.err.println(ANSI_CYAN_BACKGROUND+"[" + node.getText() + "]");
+       // System.err.println(ANSI_CYAN_BACKGROUND+"[" + node.getText() + "]");
         return (new Value (node.getText()));
     }
     @Override public Value visitNewVariable(MyGrammarParser.NewVariableContext ctx)
@@ -103,6 +103,13 @@ class MyVisitor extends MyGrammarBaseVisitor<Value>
         int result = var1.asInteger()-var2.asInteger();
         return new Value(result);
     }
+    @Override public Value visitPowerExpression(MyGrammarParser.PowerExpressionContext ctx)
+    {
+        Value var1 = visit(ctx.expression(0));
+        Value var2 = visit(ctx.expression(1));
+        Double result = Math.pow(var1.asInteger(),var2.asInteger());
+        return new Value(result);
+    }
     @Override public Value visitOnInteger(MyGrammarParser.OnIntegerContext ctx)
     {
         int result = Integer.parseInt(ctx.integer().getText());
@@ -129,14 +136,16 @@ class MyVisitor extends MyGrammarBaseVisitor<Value>
     @Override public Value visitWhileStatement(MyGrammarParser.WhileStatementContext ctx)
     {
         Value value =visit(ctx.myBoolean());
-
+     //   System.out.println("start of while loop. Initial value is: "+value);
         while (value.asBoolean())
         {
             for(int i = 0;i<ctx.line().size();i++) {
                 visit(ctx.line(i));
                 value = visit(ctx.myBoolean());
+              //  System.out.println("entered while loop iteration: "+value.asBoolean()+" lines: "+ctx.line().size()+" iteration number: "+i);
             }
         }
+       // System.out.println("End of while loop. Boolean value is: "+value.asBoolean() + " bool is: "+ visit(ctx.myBoolean()).asBoolean());
         return null;
     }
 }

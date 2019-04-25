@@ -1,4 +1,5 @@
-new Toucan .
-Toucan is 0 .
-while 300 is greater than Toucan do Toucan is Toucan plus 3 . print 2 .
-print Toucan .
+new x .
+new y .
+x is 0 .
+y is 0 .
+while x is lesser than 6 do x is x plus 1 . while y is lesser than 6 do y is y plus 1 . print x . end . y is 0 . end .
